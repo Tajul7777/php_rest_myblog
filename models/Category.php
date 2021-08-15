@@ -70,8 +70,7 @@ class Category {
     SET
       name = :name';
 
-
-        // Prepare Statement
+        // Prepare  query statement
         $stmt = $this->conn->prepare($query);
 
         // Clean data
