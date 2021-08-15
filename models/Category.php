@@ -1,10 +1,10 @@
 <?php
 class Category {
-    // DB Stuff
+    // DB Stuffs
     private $conn;
     private $table = 'categories';
 
-    // Properties
+    // Properties for category
     public $id;
     public $name;
     public $created_at;
@@ -69,6 +69,7 @@ class Category {
             $this->table . '
     SET
       name = :name';
+
 
         // Prepare Statement
         $stmt = $this->conn->prepare($query);
